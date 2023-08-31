@@ -1,0 +1,137 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    background-color: white;
+}
+
+.navbar-brand {
+    font-size: 15px;
+    color: antiquewhite;
+    font-family: Calibri;
+    font-weight: bold;
+}
+
+.nav-item {
+    color: antiquewhite;
+    font-family: Calibri;
+    font-size: large;
+}
+
+.text-center {
+    color: antiquewhite;
+    font-family: Calibri;
+    font-weight: bold;
+    background-color: ghostwhite;
+    opacity: 80%;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    color: black;
+}
+
+.row {
+    background: white;
+    border-radius: 10px;
+    width: 900px;
+    margin: auto;
+    margin-top: 15px;
+    padding: 15px;
+}
+
+.col-md-10 {
+    align-content: center;
+    background: white;
+    margin: auto;
+}
+
+.nav-pills li a:hover {
+    background-color: darkred;
+    color: white;
+}
+
+h4 {
+    font-weight: bold;
+    font-family: Calibri;
+    margin: auto;
+    text-align: center;
+}
+
+label {
+    font-weight: bold;
+    font-family: Calibri;
+    text-align: center;
+    font-size: large;
+    margin-top: -5px;
+}
+
+.btn:hover {
+    background-color: darkred;
+    color: white;
+}
+
+.btn {
+    background-color: white;
+    color: black;
+    border-color: black;
+    margin: 10px;
+    margin-left: 400px;
+    padding: 5px 32px;
+    text-align: center;
+    font-size: 16px;
+    position: center;
+    width: 150px;
+}
+
+.logo {
+    width: 50px;
+    height: 55px;
+}
+
+.View-first {
+    background-color: black;
+}
+
+tr:hover {
+    background-color: gray;
+}
+
+.table th {
+    position: sticky;
+    top: 0px;
+    height: 10px;
+    border: 1px solid white;
+}
+
+.clearancelist {
+    align-content: center;
+    color: white;
+}
+
+.form-group {
+   /* width: 1000px;*/
+    margin: auto;
+    margin-top: 20px;
+}
+
+navbar a.active {
+    color: white;
+    font-size: 30px;
+}
+
+.navbar a:active {
+    color: white;
+}

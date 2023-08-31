@@ -1,0 +1,91 @@
+﻿@model ClearanceViewModel
+
+
+<h2>Clearance Details</h2>
+
+<dl class="row">
+    <dt class="col-sm-3">Branch Name</dt>
+    <dd class="col-sm-9">@Model.BranchName</dd>
+
+    <dt class="col-sm-3">Date</dt>
+    <dd class="col-sm-9">@Model.Date</dd>
+
+    <dt class="col-sm-3">Valid ID Presented</dt>
+    <dd class="col-sm-9">@Model.IdPresented</dd>
+
+    <dt class="col-sm-3">Last Name</dt>
+    <dd class="col-sm-9">@Model.LastName</dd>
+
+    <dt class="col-sm-3">First Name</dt>
+    <dd class="col-sm-9">@Model.FirstName</dd>
+
+    <dt class="col-sm-3">Middle Name</dt>
+    <dd class="col-sm-9">@Model.MiddleName</dd>
+
+    <dt class="col-sm-3">Applicant's Photo</dt>
+    <dd class="col-sm-9">
+        @if (!string.IsNullOrEmpty(Model.pictureUrl))
+        {
+            <img src="@Model.pictureUrl" alt="Applicant's Photo" style="max-width: 100%; height: auto;">
+        }
+        else
+        {
+            <span>No Photo Available</span>
+        }
+    </dd>
+
+    <dt class="col-sm-3">Date of Birth</dt>
+    <dd class="col-sm-9">@Model.DateOfBirth</dd>
+
+    <dt class="col-sm-3">Gender</dt>
+    <dd class="col-sm-9">@Model.Gender</dd>
+
+    <dt class="col-sm-3">Civil Status</dt>
+    <dd class="col-sm-9">@Model.CivilStatus</dd>
+
+    <dt class="col-sm-3">Educational Attainment</dt>
+    <dd class="col-sm-9">@Model.EducationalAttainment</dd>
+
+    <dt class="col-sm-3">Landline Number</dt>
+    <dd class="col-sm-9">@Model.LandlineNumber</dd>
+
+    <dt class="col-sm-3">Mobile Number</dt>
+    <dd class="col-sm-9">@Model.MobileNumber</dd>
+
+    <dt class="col-sm-3">Email Address</dt>
+    <dd class="col-sm-9">@Model.Email</dd>
+
+    <dt class="col-sm-3">Complexion</dt>
+    <dd class="col-sm-9">@Model.Complexion</dd>
+
+    <dt class="col-sm-3">Marks / Scars / Peculiarities</dt>
+    <dd class="col-sm-9">@Model.Marks</dd>
+
+    <dt class="col-sm-3">Religion</dt>
+    <dd class="col-sm-9">@Model.Religion</dd>
+
+    <dt class="col-sm-3">Height</dt>
+    <dd class="col-sm-9">@Model.Height</dd>
+
+    <dt class="col-sm-3">Weight</dt>
+    <dd class="col-sm-9">@Model.Weight</dd>
+
+    <dt class="col-sm-3">Spouse Name</dt>
+    <dd class="col-sm-9">@Model.SpouseName</dd>
+
+    <dt class="col-sm-3">Father's Name</dt>
+    <dd class="col-sm-9">@Model.FatherName</dd>
+
+    <dt class="col-sm-3">Father's Place of Birth</dt>
+    <dd class="col-sm-9">@Model.FatherPlaceOfBirth</dd>
+
+    <dt class="col-sm-3">Mother's Name</dt>
+    <dd class="col-sm-9">@Model.MotherName</dd>
+
+    <dt class="col-sm-3">Mother's Place of Birth</dt>
+    <dd class="col-sm-9">@Model.MotherPlaceOfBirth</dd>
+</dl>
+
+<div class="text-center">
+    <a asp-action="Index" class="btn btn-primary">Back to List</a>
+</div>
